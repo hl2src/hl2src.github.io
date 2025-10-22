@@ -318,37 +318,41 @@
           <li><code>autoexec.cfg</code> with useful keybinds</li>
         </ul>
 
-        <div class="game-build">
-          <h3>Half-Life 2 Build <span class="highlight">2007</span></h3>
-          <p>
-            Based on the 2007 Source Engine version of Half-Life 2.<br>
-            This build has many bugs and is not optimized.
-          </p>
-          <ul class="features-list">
-            <li>Runs on the 2007 Source Engine</li>
-            <li>Fully standalone - no Steam required</li>
-          </ul>
-          <div class="btn-group">
-            <a href="http://89.37.193.229/2007.zip" class="download-btn">Download 2007 Build</a>
-          </div>
-        </div>
+<div class="game-build">
+  <h3>Half-Life 2 Build <span class="highlight">2007</span></h3>
+  <p>
+    Based on the 2007 Source Engine version of Half-Life 2.<br>
+    This build has many bugs and is not optimized.
+  </p>
+  <ul class="features-list">
+    <li>Runs on the 2007 Source Engine</li>
+    <li>Fully standalone - no Steam required</li>
+  </ul>
+  <div class="btn-group">
+    <button class="download-btn" onclick="openDownload('http://89.37.193.229/2007.zip')">
+      Download 2007 Build
+    </button>
+  </div>
+</div>
 
-        <div class="game-build">
-          <h3>Half-Life 2 Build <span class="highlight">2013</span> <span class="highlight2">RECOMMENDED</span></h3>
-          <p>
-            Based on the 2013 Steam version of the Source Engine.  <br>
-            This build is highly optimized and free of optimization bugs. <br>
-            This build significantly reduces game crashes.
-          </p>
-          <ul class="features-list">
-            <li>Runs on the 2013 Source Engine</li>
-            <li>Multi-thread support</li>
-            <li>Improved optimization</li>
-          </ul>
-          <div class="btn-group">
-            <a href="http://89.37.193.229/2013.zip" class="download-btn">Download 2013 Build</a>
-          </div>
-        </div>
+<div class="game-build">
+  <h3>Half-Life 2 Build <span class="highlight">2013</span> <span class="highlight2">RECOMMENDED</span></h3>
+  <p>
+    Based on the 2013 Steam version of the Source Engine.  <br>
+    This build is highly optimized and free of optimization bugs. <br>
+    This build significantly reduces game crashes.
+  </p>
+  <ul class="features-list">
+    <li>Runs on the 2013 Source Engine</li>
+    <li>Multi-thread support</li>
+    <li>Improved optimization</li>
+  </ul>
+  <div class="btn-group">
+    <button class="download-btn" onclick="openDownload('http://89.37.193.229/2013.zip')">
+      Download 2013 Build
+    </button>
+  </div>
+</div>
       </div>
     </div>
 
@@ -356,18 +360,28 @@
   </div>
 </div>
 
-
 <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="copyright">
-                    © 2025 hl2src.
-                </div>
-                <div class="footer-links">
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="copyright">
+        © 2025 hl2src.
+      </div>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openDownload(url) {
+    try {
+      window.open(url, '_blank');
+    } catch (e) {
+      console.error('damn fucking error:', e);
+      window.location.href = url;
+    }
+  }
+</script>
 </body>
 </html>
