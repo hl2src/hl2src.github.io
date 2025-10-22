@@ -273,12 +273,34 @@
             font-weight: bold;
         }
 
-                .highlight2 {
+        .highlight2 {
             background: linear-gradient(to right, #0099ff, #00a2ff);
             padding: 2px 6px;
             border-radius: 3px;
             color: #ffffff;
             font-weight: bold;
+        }
+
+        .download-note {
+            background-color: #1a1a1a;
+            border: 1px solid #4d4b49;
+            border-radius: 4px;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 11px;
+            color: #ff9933;
+        }
+
+        .download-link {
+            background-color: #2a2a2a;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-family: monospace;
+            margin: 5px 0;
+            display: block;
+            color: #8bb9e0;
+            border: 1px solid #4d4b49;
+            word-break: break-all;
         }
     </style>
 </head>
@@ -290,7 +312,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html"  class="active">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="config.html">Config Generator</a></li>
                     <li><a href="additional.html">Additional Files</a></li>
                 </ul>
@@ -333,6 +355,10 @@
       Download 2007 Build
     </button>
   </div>
+  <div class="download-note">
+    <strong>Note:</strong> Direct installation via button is not possible. Please copy and paste the following URL into your address bar:<br>
+    <span class="download-link">http://89.37.193.229:5000/download/2007.zip</span>
+  </div>
 </div>
 
 <div class="game-build">
@@ -351,6 +377,10 @@
     <button class="download-btn" onclick="openDownload('http://89.37.193.229/2013.zip')">
       Download 2013 Build
     </button>
+  </div>
+  <div class="download-note">
+    <strong>Note:</strong> Direct installation via button is not possible. Please copy and paste the following URL into your address bar:<br>
+    <span class="download-link">http://89.37.193.229:5000/download/2013.zip</span>
   </div>
 </div>
       </div>
